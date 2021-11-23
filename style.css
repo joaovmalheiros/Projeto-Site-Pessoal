@@ -1,0 +1,39 @@
+/*
+Quando estamos fazendo um layout de um site, o navegador representa cada elemento HTML como uma caixa retangular (box model).
+Com o CSS, pode-se alterar a aparência dessa caixa.
+O box model tem 4 áreas: margin, border, padding e content
+Margin: espaçamentos entre os elementos
+Border: circunndam o padding e o conteúdo e dá para alterar a aparência delas, como largura e cor.
+Padding: espaçamento entre a borda e o conteúdo
+Content: é o que o bloco representa (um texto, uma imagem, um vídeo)
+
+
+1)Colocar o link do style.css no arquivo index.html
+2)Alterar os títulos da página.
+    2.1)Tem três títulos: o h1 (título), o h2(subtítulo) e o h3(post)
+    2.2)Colocar um id para h1 (pois só aparece uma vez) e criar classes para o h2 e o h3
+3)Criar uma classe chamada post para o <article>
+*/
+
+body{
+    background: #ccc;
+}
+
+
+/*Alterando as cores dos três elementos*/
+#title, .subtitle, .post_title{
+    color: blue;
+}
+
+/*Alterar o tamanho da fonte e o estilo da fonte do post_title*/
+.post_title{
+    font-size: 16px;
+    font-style: italic;
+}
+
+.post{
+    background: white;
+    padding: 10px; /*Espaçamento entre o bloco e o conteúdo*/
+    border: 3px solid #000;
+    margin: 10px;
+}

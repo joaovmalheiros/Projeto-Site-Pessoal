@@ -1,2 +1,2 @@
 # Projeto-Site-Pessoal
- projeto de um site pessoal usando html, css e javascript
+ Projeto de um site pessoal usando HTML, CSS e Javascript

@@ -16,24 +16,70 @@ Content: é o que o bloco representa (um texto, uma imagem, um vídeo)
 */
 
 body{
-    background: #ccc;
+    background: #f7f7f7;
+    font-family: Verdana; /*Mudando a fonte do site*/
+    max-width: 900px; /*900px de largura para o body*/
+    margin: auto; /*Esse valor cria um espaçamento do lado e do outro, deixando sempre alinhado, independente do tamanho da tela*/
 }
 
+.photo{
+    border:1px solid #505050;
+    border-radius: 50%;
+}
 
 /*Alterando as cores dos três elementos*/
 #title, .subtitle, .post_title{
-    color: blue;
+    color: #505050;
+}
+
+/*Estilizando o texto do título*/
+#title{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+/*Mudando a aparência dos links:*/
+a{
+    text-decoration: line-through;
+    color: #505050;
 }
 
 /*Alterar o tamanho da fonte e o estilo da fonte do post_title*/
 .post_title{
     font-size: 16px;
     font-style: italic;
+    margin: 0; /*Necessário porque o navegador coloca margem para alguns elementos*/
+    margin-bottom: 10px; /*Colocando margem só na parte inferior*/
 }
 
 .post{
     background: white;
-    padding: 10px; /*Espaçamento entre o bloco e o conteúdo*/
-    border: 3px solid #000;
-    margin: 10px;
+    padding: 15px; /*Espaçamento entre o bloco e o conteúdo*/
+    border: 3px solid #505050;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.post_content{
+    margin: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    text-align: justify;
+}
+
+/*A imagem estava muito perto do post É uma boa prática manter as margens sempre na mesma direção, então se você quer dar um 
+espaçamento entre elementos, escolher colocar margem acima ou só abaixo, por isso aqui foi criada a classe para a imagem.*/
+.post_image{
+    margin-bottom: 15px;
+    width: 100%; /*Com isso, vai sempre respeitar o elemento que está de fora*/
+}
+
+.contacts_list{
+    list-style-type: none; /*Tira a bolinha da lista*/
+    padding-left: 15px; /*Alinha lista com o texto */
+}
+
+/*CSS funciona como uma cascata, tem um elemento dentro do outro*/
+.contacts_list li a{
+    text-decoration: none;
 }
